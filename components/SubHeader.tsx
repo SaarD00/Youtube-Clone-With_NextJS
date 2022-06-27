@@ -14,7 +14,7 @@ const SubHeader = () => {
           <p className="text-black">Gaming</p>
         </div>
         <div className="bg-gray-200 border border-black/20 py-1 rounded-full px-4">
-          <p className="text-black">Programming</p>
+          <p className="text-black">Typescript</p>
         </div>
       </div>
     </div>
