@@ -1,7 +1,7 @@
 import { VideoCameraIcon } from "@heroicons/react/outline";
 import React from "react";
 import { Video } from "../typings";
-
+import ReactPlayer from "react-player";
 import TimeAgo from "react-timeago";
 
 interface Props {
@@ -17,12 +17,7 @@ function Post({ video }: Props) {
           className="flex flex-col  justify-center hover:scale-105 cursor-pointer transition-all duration-200"
         >
           <div className="flex flex-col rounded-lg">
-            <video
-              color=""
-              controls
-              className="object-contain h-48"
-              src={video.file}
-            />
+            <ReactPlayer url={video.file} controls height={250} width={450} />
           </div>
           <div className="mt-2 flex justify-start gap-5">
             <img
